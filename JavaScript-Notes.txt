@@ -1,0 +1,23 @@
+JavaScript
+===: strict equality
+==: same value but can be different types
+document.querySelector().innerHTML : change the html of the selected tag in a web page
+let x = 0: initialize variable x
+const x: create a constant variable
+`Counter is now ${counter}`: plug in literal for variable counter -> same as f”…{}” in python
+document.querySelector(‘tag’)
+document.querySelector(‘#id’)
+document.querySelector(‘.class’)
+button => {}: function(button) {} //another way for writing function that takes button as param
+() => {}: left of arrow is the input of the function; right is the code run
+
+Events:
+* onclick: happen when click button\
+* onmouseover: hover over 
+* onkeydown: respond to keyboard type
+* onkeyup
+* onload
+* onblur
+Local Storage
+localStorage.getItem(key)
+localStorage.setItem(key,value)

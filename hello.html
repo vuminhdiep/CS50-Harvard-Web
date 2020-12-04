@@ -3,20 +3,21 @@
     <head>
         <title>Hello</title>
         <script>
-            function hello(){
-                const heading = documnet.querySelector('h1');
-                if(heading.innerHTML === 'Hello!'){
-                    heading.innerHTML = 'Goodbye!'; //Find in the webpage h1 element and change it to Goodbye
-                } else {
-                    heading.innerHTML = 'Hello!';
-                }
-                
-            }
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('form').onsubmit = function() {
+                    const name = document.querySelector('#name').value;
+                    alert(`Hello, ${name}!`);
+                };
+            });
             
         </script>
     </head>
     <body>
         <h1>Hello!</h1>
+        <form>
+            <input autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
         <button onclick="hello()">Click here</button>
     </body>
 </html>
