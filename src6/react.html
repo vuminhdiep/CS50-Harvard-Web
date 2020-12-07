@@ -10,12 +10,23 @@
     <div id="app" />
     <script type="text/babel">
 
+      class Hello extends React.Component {
+
+      render() {
+        return (
+          <h1>Hello World, {this.props.name}!</h1>
+        );
+      }
+      }
+
       class App extends React.Component {
 
         render() {
           return (
             <div>
               Hello!
+              <Hello name="Harry"/>
+              <Hello name="Ron"/>
             </div>
           );
         }
