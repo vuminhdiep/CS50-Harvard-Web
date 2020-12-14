@@ -1,0 +1,9 @@
+UI
+history.pushSate(): push URL to history, add things to URL, history
+window.onpopstate(): display history, save states when go back and forward pages
+event.state.section: see what section the user is on
+window.innerWidth/window.innerHeight: user’s screen dimension
+window.scrollY: how many pixels far have you scrolled up and down
+document.body.offsetHeight: height of the entire document
+React
+parseInt():convert to interger
